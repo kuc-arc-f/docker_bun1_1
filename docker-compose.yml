@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bun:
+    build: ./docker-bun
+    container_name: bun
+    ports:
+        - 3000:3000
+    volumes:
+        - ./:/work
+    tty: true
